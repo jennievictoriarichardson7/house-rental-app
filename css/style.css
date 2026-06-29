@@ -140,3 +140,55 @@ nav a:hover{
     border-radius:10px;
     cursor:pointer;
 }
+.search-section{
+    margin-top:-60px;
+    position:relative;
+    z-index:10;
+    padding:0 8%;
+}
+
+.search-box{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.search-box h2{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.search-fields{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr auto;
+    gap:15px;
+}
+
+.search-fields input,
+.search-fields select{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.search-fields button{
+    padding:15px 30px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.search-fields button:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:900px){
+    .search-fields{
+        grid-template-columns:1fr;
+    }
+}
